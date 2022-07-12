@@ -1,0 +1,53 @@
+
+    .gridMainWindow {
+        grid-template-columns:  1fr;
+        grid-gap: 1rem;
+        grid-template-areas:
+    "areaIHeader"
+    "areaCheckUser"
+    "areaChart "
+    "areaInfo"
+    "areaButtons";
+    }
+
+
+@media  (min-width: 640px){
+    .gridMainWindow {
+        height: 100%;
+        display: grid;
+        grid-template-columns:  auto 3fr;
+        grid-template-rows: 100px 500px 100px;
+        grid-gap: 1rem;
+        grid-template-areas:
+    "areaIHeader areaIHeader"
+    "areaCheckUser areaChart "
+    "areaButtons areaInfo ";
+    }
+
+
+    .gridIHeader {
+        grid-area: areaIHeader;
+    }
+
+    .gridCheckUser {
+        grid-area: areaCheckUser;
+    }
+
+    .gridChart {
+        grid-area: areaChart;
+    }
+
+    .gridButtons {
+        grid-area: areaButtons;
+    }
+
+    .gridInfo {
+        grid-area: areaInfo;
+    }
+
+    .grid {
+        /* background-color: goldenrod;*/
+        border: 1px solid darkslategrey;
+        border-radius: 5px;
+    }
+}
