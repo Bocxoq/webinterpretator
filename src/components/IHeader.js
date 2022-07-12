@@ -4,7 +4,7 @@ function IHeader(){
 	return(
 		<div className="IHeader">
 			<img src="bimdata_logo_big.png" alt="LOGO"/>
-			Interpretator
+			WEB Interpretator
 		</div>
 	)
 }
